@@ -1,0 +1,42 @@
+.social {
+  margin-right: 78px;
+}
+
+.social__heading {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--color-white);
+  margin-bottom: 20px;
+}
+
+.social__list {
+  display: flex;
+  gap: 10px;
+  list-style: none;
+}
+
+.social-icon__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  transition: background-color 250ms var(--cubic-bezier);
+
+  &:hover,
+  &:focus {
+    background-color: var(--color-blue);
+    cursor: pointer;
+  }
+}
+
+.social-icon {
+  fill: var(--color-white);
+}

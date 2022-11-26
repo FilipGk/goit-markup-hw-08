@@ -1,0 +1,65 @@
+.projects {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  list-style: none;
+}
+.project-element {
+  height: 404px;
+  position: relative;
+  background: var(--color-white);
+  border-bottom: 1px solid #eeeeee;
+  // flex-basis: ((100% - 60px)/3);
+  transition: box-shadow 250ms var(--cubic-bezier);
+}
+
+.project-element:hover {
+  cursor: pointer;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.project-element-title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.project-element-type {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
+  color: var(--secondary-text-color);
+}
+
+.project-element:hover .image-overlay {
+  height: 294px;
+}
+
+.image-overlay {
+  position: absolute;
+  bottom: 109.5px;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 0px;
+  background-color: rgba(33, 150, 243, 0.9);
+  overflow: hidden;
+  transition: height 250ms var(--cubic-bezier);
+}
+
+.image-overlay-text {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.56;
+  letter-spacing: 0.03em;
+  color: var(--color-white);
+  padding: 49px 45px 49px 25px;
+}
