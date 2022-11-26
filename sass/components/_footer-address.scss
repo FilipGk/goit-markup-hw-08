@@ -1,4 +1,4 @@
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1201px) {
   .footer__address {
     padding-top: 10px;
   }
@@ -59,6 +59,7 @@
     display: flex;
     justify-content: center;
     list-style: none;
+    padding-bottom: 3px;
   }
 
   .footer-address__address {
@@ -69,7 +70,6 @@
     line-height: 1.71;
     color: var(--color-white);
     margin: 0;
-    padding-block: 9px;
   }
 
   .footer-address__email {
@@ -80,7 +80,6 @@
     line-height: 1.71;
     color: rgba(255, 255, 255, 0.6);
     margin: 0;
-    padding-block: 9px;
     text-decoration: none;
   }
 
@@ -92,7 +91,6 @@
     line-height: 1.71;
     color: rgba(255, 255, 255, 0.6);
     margin: 0;
-    padding-block: 9px;
     text-decoration: none;
   }
 
