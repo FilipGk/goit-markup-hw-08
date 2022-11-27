@@ -1,4 +1,4 @@
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1201px) {
   .header {
     border-bottom: 1px solid #ececec;
     background-color: var(--color-white);
@@ -32,15 +32,14 @@
 @media screen and (min-width: 320px) and (max-width: 480px) {
   .header {
     border-bottom: 1px solid #ececec;
-    // background-color: var(--color-white);
-    background-color: red;
+    background-color: var(--color-white);
     display: flex;
     align-items: center;
-    padding-top: 11px;
-    padding-bottom: 11px;
     margin: 0 auto;
     width: 100vw;
     justify-content: space-between;
+    width: 100vw;
+    height: 60px;
   }
 
   .header__wrapper {
@@ -52,11 +51,12 @@
     font-family: "Raleway", sans-serif;
     font-style: normal;
     font-weight: 700;
-    font-size: 26px;
+    font-size: 24px;
     letter-spacing: 0.03em;
-    line-height: 2.2;
+    line-height: 1.75;
     color: #000000;
     text-decoration: none;
     margin: 0;
+    padding-left: 15px;
   }
 }
