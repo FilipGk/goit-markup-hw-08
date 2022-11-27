@@ -17,11 +17,6 @@
     <header class="header">
       <div class="header__wrapper">
         <a class="header__logo" href="index.html"> <span class="web-color">Web</span>Studio </a>
-        <button class="header__menu">
-          <svg width="40" height="40">
-            <use href="./images/icons.svg#icon-menu"></use>
-          </svg>
-        </button>
         <nav class="navigation">
           <ul class="navigation__list">
             <li>
@@ -35,101 +30,32 @@
             </li>
           </ul>
         </nav>
+        <div class="header__contact">
+          <ul class="header-contact-list">
+            <li>
+              <div class="header-contact-list__element">
+                <svg width="16" height="12" class="header-contact__icon">
+                  <use href="images/icons.svg#icon-envelope"></use>
+                </svg>
+                <a class="header__contact" href="mailto:info@example.com">info@example.com</a>
+              </div>
+            </li>
+            <li>
+              <div class="header-contact-list__element">
+                <svg width="16" height="12" class="header-contact__icon">
+                  <use href="images/icons.svg#icon-smartphone"></use>
+                </svg>
+                <p class="header__contact">+48 111 111 111</p>
+              </div>
+            </li>
+          </ul>
+        </div>
       </div>
-      <ul class="header-contact-list">
-        <li>
-          <div class="header-contact-list__element">
-            <svg width="16" height="12" class="header-contact__icon">
-              <use href="images/icons.svg#icon-envelope"></use>
-            </svg>
-            <a class="header__contact" href="mailto:info@example.com">info@example.com</a>
-          </div>
-        </li>
-        <li>
-          <div class="header-contact-list__element">
-            <svg width="16" height="12" class="header-contact__icon">
-              <use href="images/icons.svg#icon-smartphone"></use>
-            </svg>
-            <p class="header__contact">+48 111 111 111</p>
-          </div>
-        </li>
-      </ul>
     </header>
     <main>
       <section class="banner">
         <h1 class="banner__heading">EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
         <button class="banner__button" type="button" data-modal-open>Zamów usługe</button>
-        <div class="backdrop is-hidden" data-modal>
-          <div class="modal">
-            <button class="modal-close-button" data-modal-close>
-              <svg class="modal__icon" width="18" height="18">
-                <use href="images/icons.svg#icon-close"></use>
-              </svg>
-            </button>
-            <form class="form">
-              <p class="form__heading">Zostaw swoje dane w formularzu poniżej</p>
-              <fieldset class="form__fieldset">
-                <label class="form__label" for="name">Imie</label>
-                <svg class="form-icon" width="18" height="18">
-                  <use href="images/icons.svg#icon-person"></use>
-                </svg>
-                <input
-                  id="name"
-                  name="name"
-                  class="form__input"
-                  type="text"
-                  required
-                  minlength="2"
-                  maxlength="10" />
-              </fieldset>
-              <fieldset class="form__fieldset">
-                <label class="form__label" for="telephone">Telefon</label>
-                <svg class="form-icon" width="18" height="18">
-                  <use href="images/icons.svg#icon-telephone"></use>
-                </svg>
-                <input id="telephone" name="telephone" class="form__input" type="tel" required />
-              </fieldset>
-              <fieldset class="form__fieldset">
-                <label class="form__label" for="email"> Email</label>
-                <svg class="form-icon" width="18" height="18">
-                  <use href="images/icons.svg#icon-form-envelope"></use>
-                </svg>
-                <input id="email" name="email" class="form__input" type="email" required />
-              </fieldset>
-              <fieldset class="form-textarea__wrapper">
-                <label class="form__label" for="comment">Komentarz</label>
-                <textarea
-                  placeholder="Wprowadź tekst"
-                  id="comment"
-                  name="comment"
-                  class="form-textarea"
-                  rows="9"
-                  maxlength="200"></textarea>
-              </fieldset>
-              <fielset class="form-privacy-policy">
-                <input
-                  type="checkbox"
-                  id="form-checkbox"
-                  name="form-checkbox"
-                  class="form-checkbox"
-                  required />
-                <label class="form-privacy-policy__label" for="form-checkbox">
-                  Oświadczam iż akceptuję&nbsp
-                  <a class="form-privacy-policy-link" href="#">Regulamin</a> &nbspi&nbsp
-                  <a class="form-privacy-policy-link" href="#">Politykę Prywatności.</a>
-                </label>
-                <div class="checkmark">
-                  <svg width="11" height="8">
-                    <use href="images/icons.svg#icon-checkmark"></use>
-                  </svg>
-                </div>
-              </fielset>
-              <button class="form__button" type="submit">
-                <span>Wyślij</span>
-              </button>
-            </form>
-          </div>
-        </div>
       </section>
       <section class="description section">
         <ul class="description__list">
@@ -388,61 +314,47 @@
     </main>
     <footer class="footer">
       <div class="footer__wrapper">
-        <div>
-          <a class="footer__logo" href="index.html"><span class="web-color">Web</span>Studio</a>
-          <address class="footer__address">
-            <ul class="footer-address__list">
-              <li class="footer-address__list-element">
-                <span class="footer-address__address">m. Warszawa, Aleje Jerozolimskie 21</span>
-              </li>
-              <li class="footer-address__list-element">
-                <span>
-                  <a class="footer-address__email" href="mailto:info@example.com"
-                    >info@example.com</a
-                  >
-                </span>
-              </li>
-              <li class="footer-address__list-element">
-                <span class="footer-address__tel">+48 111 111 111</span>
-              </li>
-            </ul>
-          </address>
-        </div>
+        <a class="footer__logo" href="index.html"><span class="web-color">Web</span>Studio</a>
+        <address class="footer__address">
+          <ul class="address__list">
+            <li class="address-list__element">
+              <span class="footer-address__address">m. Warszawa, Aleje Jerozolimskie 21</span>
+            </li>
+            <li class="address-list__element">
+              <a class="footer-address__contact" href="mailto:info@example.com">info@example.com</a>
+            </li>
+            <li class="address-list__element">
+              <a class="footer-address__contact" href="tel:+48 111 111 111">+48 111 111 111</a>
+            </li>
+          </ul>
+        </address>
         <div class="social">
-          <p class="social__heading">DOŁĄCZ DO NAS</p>
+          <p class="social__headline">Dołącz do nas</p>
           <ul class="social__list">
-            <div class="social-icon__wrapper">
-              <li>
-                <svg width="20" height="20" class="social-icon">
-                  <use href="images/icons.svg#icon-instagram"></use>
-                </svg>
-              </li>
-            </div>
-            <div class="social-icon__wrapper">
-              <li>
-                <svg width="20" height="20" class="social-icon">
-                  <use href="images/icons.svg#icon-twitter"></use>
-                </svg>
-              </li>
-            </div>
-            <div class="social-icon__wrapper">
-              <li>
-                <svg width="20" height="20" class="social-icon">
-                  <use href="images/icons.svg#icon-facebook"></use>
-                </svg>
-              </li>
-            </div>
-            <div class="social-icon__wrapper">
-              <li>
-                <svg width="20" height="20" class="social-icon">
-                  <use href="images/icons.svg#icon-linkedin"></use>
-                </svg>
-              </li>
-            </div>
+            <li class="social-list__element">
+              <svg class="social__icon" width="20" height="20">
+                <use href="images/icons.svg#icon-instagram"></use>
+              </svg>
+            </li>
+            <li class="social-list__element">
+              <svg class="social__icon" width="20" height="20">
+                <use href="images/icons.svg#icon-twitter"></use>
+              </svg>
+            </li>
+            <li class="social-list__element">
+              <svg class="social__icon" width="20" height="20">
+                <use href="images/icons.svg#icon-facebook"></use>
+              </svg>
+            </li>
+            <li class="social-list__element">
+              <svg class="social__icon" width="20" height="20">
+                <use href="images/icons.svg#icon-linkedin"></use>
+              </svg>
+            </li>
           </ul>
         </div>
-        <form class="newsletter__form">
-          <fieldset class="newsletter__wrapper">
+        <div class="newsletter">
+          <form class="newsletter__form">
             <label class="newsletter-form__label"> Zapisz się do newslettera </label>
             <input
               class="newsletter-form__input"
@@ -455,10 +367,82 @@
                 <use href="images/icons.svg#icon-newsletter"></use>
               </svg>
             </button>
-          </fieldset>
-        </form>
+          </form>
+        </div>
       </div>
     </footer>
+
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="modal-close-button" data-modal-close>
+          <svg class="modal__icon" width="18" height="18">
+            <use href="images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+        <form class="form">
+          <p class="form__heading">Zostaw swoje dane w formularzu poniżej</p>
+          <fieldset class="form__fieldset">
+            <label class="form__label" for="name">Imie</label>
+            <svg class="form-icon" width="18" height="18">
+              <use href="images/icons.svg#icon-person"></use>
+            </svg>
+            <input
+              id="name"
+              name="name"
+              class="form__input"
+              type="text"
+              required
+              minlength="2"
+              maxlength="10" />
+          </fieldset>
+          <fieldset class="form__fieldset">
+            <label class="form__label" for="telephone">Telefon</label>
+            <svg class="form-icon" width="18" height="18">
+              <use href="images/icons.svg#icon-telephone"></use>
+            </svg>
+            <input id="telephone" name="telephone" class="form__input" type="tel" required />
+          </fieldset>
+          <fieldset class="form__fieldset">
+            <label class="form__label" for="email"> Email</label>
+            <svg class="form-icon" width="18" height="18">
+              <use href="images/icons.svg#icon-form-envelope"></use>
+            </svg>
+            <input id="email" name="email" class="form__input" type="email" required />
+          </fieldset>
+          <fieldset class="form-textarea__wrapper">
+            <label class="form__label" for="comment">Komentarz</label>
+            <textarea
+              placeholder="Wprowadź tekst"
+              id="comment"
+              name="comment"
+              class="form-textarea"
+              rows="9"
+              maxlength="200"></textarea>
+          </fieldset>
+          <fielset class="form-privacy-policy">
+            <input
+              type="checkbox"
+              id="form-checkbox"
+              name="form-checkbox"
+              class="form-checkbox"
+              required />
+            <label class="form-privacy-policy__label" for="form-checkbox">
+              Oświadczam iż akceptuję&nbsp
+              <a class="form-privacy-policy-link" href="#">Regulamin</a> &nbspi&nbsp
+              <a class="form-privacy-policy-link" href="#">Politykę Prywatności.</a>
+            </label>
+            <div class="checkmark">
+              <svg width="11" height="8">
+                <use href="images/icons.svg#icon-checkmark"></use>
+              </svg>
+            </div>
+          </fielset>
+          <button class="form__button" type="submit">
+            <span>Wyślij</span>
+          </button>
+        </form>
+      </div>
+    </div>
     <script src="modal.js"></script>
   </body>
 </html>
