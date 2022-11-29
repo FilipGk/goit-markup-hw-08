@@ -379,7 +379,8 @@
       </div>
     </footer>
 
-    <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop" data-modal>
+      <!--dodac klase is-hidden -->
       <div class="modal">
         <button class="modal-close-button" data-modal-close>
           <svg class="modal__icon" width="18" height="18">
@@ -387,66 +388,68 @@
           </svg>
         </button>
         <form class="form">
-          <p class="form__heading">Zostaw swoje dane w formularzu poniżej</p>
-          <fieldset class="form__fieldset">
-            <label class="form__label" for="name">Imie</label>
-            <svg class="form-icon" width="18" height="18">
-              <use href="images/icons.svg#icon-person"></use>
-            </svg>
-            <input
-              id="name"
-              name="name"
-              class="form__input"
-              type="text"
-              required
-              minlength="2"
-              maxlength="10" />
-          </fieldset>
-          <fieldset class="form__fieldset">
-            <label class="form__label" for="telephone">Telefon</label>
-            <svg class="form-icon" width="18" height="18">
-              <use href="images/icons.svg#icon-telephone"></use>
-            </svg>
-            <input id="telephone" name="telephone" class="form__input" type="tel" required />
-          </fieldset>
-          <fieldset class="form__fieldset">
-            <label class="form__label" for="email"> Email</label>
-            <svg class="form-icon" width="18" height="18">
-              <use href="images/icons.svg#icon-form-envelope"></use>
-            </svg>
-            <input id="email" name="email" class="form__input" type="email" required />
-          </fieldset>
-          <fieldset class="form-textarea__wrapper">
-            <label class="form__label" for="comment">Komentarz</label>
-            <textarea
-              placeholder="Wprowadź tekst"
-              id="comment"
-              name="comment"
-              class="form-textarea"
-              rows="9"
-              maxlength="200"></textarea>
-          </fieldset>
-          <fielset class="form-privacy-policy">
-            <input
-              type="checkbox"
-              id="form-checkbox"
-              name="form-checkbox"
-              class="form-checkbox"
-              required />
-            <label class="form-privacy-policy__label" for="form-checkbox">
-              Oświadczam iż akceptuję&nbsp
-              <a class="form-privacy-policy-link" href="#">Regulamin</a> &nbspi&nbsp
-              <a class="form-privacy-policy-link" href="#">Politykę Prywatności.</a>
-            </label>
-            <div class="checkmark">
-              <svg width="11" height="8">
-                <use href="images/icons.svg#icon-checkmark"></use>
+          <div class="form__wrapper">
+            <p class="form__heading">Zostaw swoje dane w formularzu poniżej</p>
+            <fieldset class="form__fieldset">
+              <label class="form__label" for="name">Imie</label>
+              <svg class="form-icon" width="18" height="18">
+                <use href="images/icons.svg#icon-person"></use>
               </svg>
-            </div>
-          </fielset>
-          <button class="form__button" type="submit">
-            <span>Wyślij</span>
-          </button>
+              <input
+                id="name"
+                name="name"
+                class="form__input"
+                type="text"
+                required
+                minlength="2"
+                maxlength="10" />
+            </fieldset>
+            <fieldset class="form__fieldset">
+              <label class="form__label" for="telephone">Telefon</label>
+              <svg class="form-icon" width="18" height="18">
+                <use href="images/icons.svg#icon-telephone"></use>
+              </svg>
+              <input id="telephone" name="telephone" class="form__input" type="tel" required />
+            </fieldset>
+            <fieldset class="form__fieldset">
+              <label class="form__label" for="email"> Email</label>
+              <svg class="form-icon" width="18" height="18">
+                <use href="images/icons.svg#icon-form-envelope"></use>
+              </svg>
+              <input id="email" name="email" class="form__input" type="email" required />
+            </fieldset>
+            <fieldset class="form-textarea__wrapper">
+              <label class="form__label" for="comment">Komentarz</label>
+              <textarea
+                placeholder="Wprowadź tekst"
+                id="comment"
+                name="comment"
+                class="form-textarea"
+                rows="9"
+                maxlength="200"></textarea>
+            </fieldset>
+            <fielset class="form-privacy-policy">
+              <input
+                type="checkbox"
+                id="form-checkbox"
+                name="form-checkbox"
+                class="form-checkbox"
+                required />
+              <label class="form-privacy-policy__label" for="form-checkbox">
+                Oświadczam iż akceptuję&nbsp
+                <a class="form-privacy-policy-link" href="#">Regulamin</a> &nbspi&nbsp
+                <a class="form-privacy-policy-link" href="#">Politykę Prywatności.</a>
+              </label>
+              <div class="checkmark">
+                <svg width="11" height="8">
+                  <use href="images/icons.svg#icon-checkmark"></use>
+                </svg>
+              </div>
+            </fielset>
+            <button class="form__button" type="submit">
+              <span>Wyślij</span>
+            </button>
+          </div>
         </form>
       </div>
     </div>
