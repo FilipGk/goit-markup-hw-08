@@ -1,96 +1,212 @@
-.header {
-  border-bottom: 1px solid #ececec;
-  background-color: var(--color-white);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+@media screen and (min-width: 1201px) {
+  .header {
+    border-bottom: 1px solid #ececec;
+    background-color: var(--color-white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
-.header__wrapper {
-  display: flex;
-  align-items: center;
-  width: 1200px;
-}
+  .header__wrapper {
+    display: flex;
+    align-items: center;
+    width: 1200px;
+  }
 
-.header__logo {
-  font-family: "Raleway", sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 26px;
-  letter-spacing: 0.03em;
-  line-height: 1.19;
-  color: #000000;
-  text-decoration: none;
-  margin: 0;
-  display: block;
-  margin-right: 93px;
-  padding: 24px 0 24px 0;
-}
+  .header__logo {
+    font-family: "Raleway", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    letter-spacing: 0.03em;
+    line-height: 1.19;
+    color: #000000;
+    text-decoration: none;
+    margin: 0;
+    display: block;
+    margin-right: 93px;
+    padding: 24px 0 24px 0;
+  }
 
-.navigation__list {
-  display: flex;
-  margin: 0;
-  list-style: none;
-  gap: 46px;
-  margin-right: 345px;
-}
+  .navigation__list {
+    display: flex;
+    margin: 0;
+    list-style: none;
+    gap: 46px;
+    margin-right: 345px;
+  }
 
-.nav-element {
-  position: relative;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  text-decoration: none;
-  color: var(--primary-text-color);
-  transition: color 250ms var(--cubic-bezier);
+  .nav-element {
+    position: relative;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    color: var(--primary-text-color);
+    transition: color 250ms var(--cubic-bezier);
 
-  &:hover,
-  &:focus {
-    color: var(--color-blue);
+    &:hover,
+    &:focus {
+      color: var(--color-blue);
+      cursor: pointer;
+    }
+  }
+
+  .header-contact-list {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 30px;
+    list-style: none;
+    margin-left: 12px;
+  }
+
+  .header-contact-list__element {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .header-contact-list__element:hover .header-contact__icon {
     cursor: pointer;
+    fill: var(--color-blue);
+  }
+
+  .header__contact {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--secondary-text-color);
+    text-decoration: none;
+    transition: color 250ms var(--cubic-bezier);
+
+    &:hover,
+    &:focus {
+      color: var(--color-blue);
+      cursor: pointer;
+    }
+  }
+
+  .header-contact__icon {
+    fill: var(--secondary-text-color);
+    transition: fill 250ms var(--cubic-bezier);
   }
 }
 
-.header-contact-list {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  gap: 30px;
-  list-style: none;
-  margin-left: 12px;
-}
-
-.header-contact-list__element {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.header-contact-list__element:hover .header-contact__icon {
-  cursor: pointer;
-  fill: var(--color-blue);
-}
-
-.header__contact {
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  color: var(--secondary-text-color);
-  text-decoration: none;
-  transition: color 250ms var(--cubic-bezier);
-
-  &:hover,
-  &:focus {
-    color: var(--color-blue);
-    cursor: pointer;
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .header {
+    border-bottom: 1px solid #ececec;
+    background-color: var(--color-white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
-}
 
-.header-contact__icon {
-  fill: var(--secondary-text-color);
-  transition: fill 250ms var(--cubic-bezier);
+  .header__wrapper {
+    display: flex;
+    align-items: center;
+    width: 1200px;
+  }
+
+  .header__logo {
+    font-family: "Raleway", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    letter-spacing: 0.03em;
+    line-height: 1.17;
+    color: #000000;
+    text-decoration: none;
+    margin: 0;
+    display: block;
+    padding: 16px 0 16px 15px;
+  }
+
+  .navigation {
+    display: none;
+  }
+
+  .navigation__list {
+    display: flex;
+    margin: 0;
+    list-style: none;
+    gap: 46px;
+    margin-right: 345px;
+  }
+
+  .nav-element {
+    position: relative;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    color: var(--primary-text-color);
+    transition: color 250ms var(--cubic-bezier);
+
+    &:hover,
+    &:focus {
+      color: var(--color-blue);
+      cursor: pointer;
+    }
+  }
+
+  .header-contact-list {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 30px;
+    list-style: none;
+    margin-left: 12px;
+  }
+
+  .header-contact-list__element {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .header-contact-list__element:hover .header-contact__icon {
+    cursor: pointer;
+    fill: var(--color-blue);
+  }
+
+  .header__contact {
+    display: none;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--secondary-text-color);
+    text-decoration: none;
+    transition: color 250ms var(--cubic-bezier);
+
+    &:hover,
+    &:focus {
+      color: var(--color-blue);
+      cursor: pointer;
+    }
+  }
+
+  .header-contact__icon {
+    fill: var(--secondary-text-color);
+    transition: fill 250ms var(--cubic-bezier);
+  }
+
+  .mobile-menu__button {
+    border: none;
+    padding: 0;
+    width: 40px;
+    height: 40px;
+    background-color: var(--color-white);
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
 }

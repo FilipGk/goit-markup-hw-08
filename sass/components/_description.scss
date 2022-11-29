@@ -1,4 +1,4 @@
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1201px) {
   .description {
     display: flex;
     flex-wrap: wrap;
@@ -60,6 +60,7 @@
       display: flex;
       flex-direction: column;
       max-width: 1600px;
+      gap: 30px;
     }
   }
 
@@ -67,7 +68,6 @@
     list-style: none;
     margin-left: 15px;
     margin-right: 15px;
-    margin-bottom: 30px;
   }
 
   .description-icon__wrapper {
@@ -85,9 +85,10 @@
     font-weight: 700;
     font-size: 14px;
     letter-spacing: 0.03em;
-    line-height: 1;
+    line-height: 1.143;
     text-transform: uppercase;
     padding-bottom: 10px;
+    text-align: center;
   }
 
   .description__text {
