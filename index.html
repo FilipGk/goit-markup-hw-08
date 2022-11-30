@@ -45,12 +45,15 @@
                 <svg width="16" height="12" class="header-contact__icon">
                   <use href="images/icons.svg#icon-smartphone"></use>
                 </svg>
-                <p class="header__contact">+48 111 111 111</p>
+                <p class="header__contact" href="tel:+48 111 111 111">+48 111 111 111</p>
               </div>
             </li>
           </ul>
         </div>
-        <button class="mobile-menu__button">
+        <button
+          class="mobile-menu-open__button js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu">
           <svg width="40" height="40">
             <use href="images/icons.svg#icon-menu"></use>
           </svg>
@@ -394,6 +397,52 @@
         </div>
       </div>
     </footer>
+    <div class="mobile-menu js-menu-container" id="mobile-menu">
+      <button class="mobile-menu-close__button js-close-menu">
+        <svg width="40" height="40">
+          <use href="images/icons.svg#icon-close-menu"></use>
+        </svg>
+      </button>
+      <nav class="mobile-menu__nav">
+        <ul class="mobile-menu-nav__list">
+          <li class="menu-nav-list__element">
+            <a class="menu-nav-element__link" href="index.html">Agencja</a>
+          </li>
+          <li class="menu-nav-list__element">
+            <a class="menu-nav-element__link" href="portfolio.html">Portfolio</a>
+          </li>
+          <li class="menu-nav-list__element">
+            <a class="menu-nav-element__link">Kontakt</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="mobile-menu__contact">
+        <ul class="menu-contact__list">
+          <li class="menu-contact-list__element">
+            <a class="menu-contact__tel" href="tel:+48 111 111 111">+48 111 111 111</a>
+          </li>
+          <li class="menu-contact-list__element">
+            <a class="menu-contact__email" href="mailto:info@devstudio.com">info@devstudio.com</a>
+          </li>
+        </ul>
+      </div>
+      <div class="mobile-menu-social__wrapper">
+        <ul class="menu-social__list">
+          <li class="menu-social-list__element">
+            <a class="menu-social__link" href="https://www.instagram.com/">Instagram</a>
+          </li>
+          <li class="menu-social-list__element">
+            <a class="menu-social__link" href="https://www.twitter.com">Twitter</a>
+          </li>
+          <li class="menu-social-list__element">
+            <a class="menu-social__link" href="https://www.facebook.com">Facebook</a>
+          </li>
+          <li class="menu-social-list__element">
+            <a class="menu-social__link" href="https://www.linkedin.com">Linkedin</a>
+          </li>
+        </ul>
+      </div>
+    </div>
 
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
@@ -469,5 +518,6 @@
       </div>
     </div>
     <script src="modal.js"></script>
+    <script src="mobile-menu.js"></script>
   </body>
 </html>
