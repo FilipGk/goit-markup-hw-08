@@ -1,4 +1,4 @@
-@media screen and (min-width: 1201px) {
+@media screen and (min-width: 1200px) {
   .clients__heading {
     font-style: normal;
     font-weight: 700;
@@ -44,7 +44,7 @@
   }
 }
 
-@media screen and (min-width: 320px) and (max-width: 480px) {
+@media screen and (min-width: 480px) and (max-width: 767px) {
   .clients {
     width: 100%;
   }
@@ -71,6 +71,61 @@
   .clients__list-element {
     list-style: none;
     width: 46.66%;
+    height: 92px;
+  }
+
+  .clients-icon__wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
+    padding: 17px 31px 14px 31px;
+    transition: border-color 250ms var(--cubic-bezier);
+
+    &:hover {
+      border-color: var(--color-blue);
+      cursor: pointer;
+    }
+  }
+
+  .clients__icon {
+    fill: var(--icon-color);
+    transition: fill 250ms var(--cubic-bezier);
+  }
+
+  .clients-icon__wrapper:hover .clients__icon {
+    fill: var(--color-blue);
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .clients {
+    width: 100%;
+  }
+
+  .clients__heading {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    letter-spacing: 0.03em;
+    line-height: 1.18;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .clients__list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin-inline: 15px;
+  }
+
+  .clients__list-element {
+    list-style: none;
+    width: 226px;
     height: 92px;
   }
 
