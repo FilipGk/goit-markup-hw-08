@@ -366,7 +366,7 @@
   }
 
   .footer__wrapper {
-    width: 100%;
+    width: 768px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -385,21 +385,24 @@
     display: block;
     position: absolute;
     top: 60px;
-    left: 115px;
+    left: 128px;
   }
 
   .footer__address {
     width: 253px;
-    margin-left: 76px;
-    margin-right: 144px;
+    margin: 0 144px 0 76px;
+    position: relative;
   }
 
   .address__list {
+    position: absolute;
     display: flex;
     flex-direction: column;
     align-items: center;
     flex-wrap: wrap;
     list-style: none;
+    top: -22px;
+    left: -8px;
   }
 
   .footer-address__address {
@@ -445,6 +448,7 @@
     text-transform: uppercase;
     color: var(--color-white);
     margin-bottom: 20px;
+    text-align: center;
   }
 
   .social__list {
@@ -514,7 +518,7 @@
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
     padding: 14px 0px 14px 16px;
-    width: 90%;
+    width: 96%;
     margin-bottom: 20px;
   }
 
