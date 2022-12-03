@@ -199,7 +199,6 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin-inline: 15px;
     gap: 30px;
     width: 100%;
   }
@@ -211,7 +210,6 @@
       0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
     list-style: none;
-    margin-bottom: 30px;
 
     & img {
       width: 100%;

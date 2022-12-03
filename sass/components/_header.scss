@@ -162,7 +162,7 @@
   .header__wrapper {
     display: flex;
     align-items: center;
-    width: 100vw;
+    width: 100%;
   }
 
   .header__logo {
@@ -232,6 +232,7 @@
     color: var(--secondary-text-color);
     text-decoration: none;
     transition: color 250ms var(--cubic-bezier);
+    margin-left: 8px;
 
     &:hover,
     &:focus {
