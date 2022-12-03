@@ -1,155 +1,157 @@
-@media screen and (min-width: 1200px) {
-  .clients__heading {
-    font-style: normal;
-    font-weight: 700;
-    font-size: 36px;
-    letter-spacing: 0.03em;
-    line-height: 2.62;
-    text-align: center;
-    padding-bottom: 50px;
-  }
+.clients {
+  width: 100%;
+  display: flex;
+  justify-content: center;
 
-  .clients__list {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-  }
-
-  .clients__list-element {
-    list-style: none;
-  }
-
-  .clients-icon__wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid #afb1b8;
-    border-radius: 4px;
-    padding: 17px 31px 14px 31px;
-    transition: border-color 250ms var(--cubic-bezier);
-
-    &:hover {
-      border-color: var(--color-blue);
-      cursor: pointer;
-    }
-  }
-
-  .clients__icon {
-    fill: var(--icon-color);
-    transition: fill 250ms var(--cubic-bezier);
-  }
-
-  .clients-icon__wrapper:hover .clients__icon {
-    fill: var(--color-blue);
+  &__wrapper {
+    width: 93.75%;
   }
 }
 
-@media screen and (min-width: 480px) and (max-width: 767px) {
-  .clients {
-    width: 100%;
-  }
+.clients__heading {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.179;
+  letter-spacing: 0.03em;
+  text-align: center;
+  margin-bottom: 30px;
+}
 
-  .clients__heading {
-    font-style: normal;
-    font-weight: 700;
-    font-size: 28px;
-    letter-spacing: 0.03em;
-    line-height: 1.18;
-    text-align: center;
-    margin-bottom: 30px;
-  }
+.clients__list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  gap: 30px;
+}
 
-  .clients__list {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    gap: 30px;
-    margin-inline: 15px;
-  }
+.clients__list-element {
+  list-style: none;
+  width: 210px;
+}
 
-  .clients__list-element {
-    list-style: none;
-    width: 46.66%;
-    height: 92px;
-  }
+.clients-icon__wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  padding: 15px 0 15px 0;
+  transition: border-color 250ms var(--cubic-bezier);
 
-  .clients-icon__wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid #afb1b8;
-    border-radius: 4px;
-    padding: 17px 31px 14px 31px;
-    transition: border-color 250ms var(--cubic-bezier);
-
-    &:hover {
-      border-color: var(--color-blue);
-      cursor: pointer;
-    }
-  }
-
-  .clients__icon {
-    fill: var(--icon-color);
-    transition: fill 250ms var(--cubic-bezier);
-  }
-
-  .clients-icon__wrapper:hover .clients__icon {
-    fill: var(--color-blue);
+  &:hover {
+    border-color: var(--color-blue);
+    cursor: pointer;
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .clients {
-    width: 100%;
-  }
-
-  .clients__heading {
-    font-style: normal;
-    font-weight: 700;
-    font-size: 28px;
-    letter-spacing: 0.03em;
-    line-height: 1.18;
-    text-align: center;
-    margin-bottom: 30px;
-  }
-
-  .clients__list {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    gap: 30px;
-    margin-inline: 15px;
-  }
-
-  .clients__list-element {
-    list-style: none;
-    width: 226px;
-    height: 92px;
-  }
-
-  .clients-icon__wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid #afb1b8;
-    border-radius: 4px;
-    padding: 17px 31px 14px 31px;
-    transition: border-color 250ms var(--cubic-bezier);
-
-    &:hover {
-      border-color: var(--color-blue);
-      cursor: pointer;
-    }
-  }
-
-  .clients__icon {
-    fill: var(--icon-color);
-    transition: fill 250ms var(--cubic-bezier);
-  }
-
-  .clients-icon__wrapper:hover .clients__icon {
-    fill: var(--color-blue);
-  }
+.clients__icon {
+  fill: var(--icon-color);
+  transition: fill 250ms var(--cubic-bezier);
 }
+
+.clients-icon__wrapper:hover .clients__icon {
+  fill: var(--color-blue);
+}
+
+// @media screen and (min-width: 768px) and (max-width: 1199px) {
+//   .clients {
+//     width: 100%;
+//   }
+
+//   .clients__heading {
+//     font-style: normal;
+//     font-weight: 700;
+//     font-size: 28px;
+//     letter-spacing: 0.03em;
+//     line-height: 1.18;
+//     text-align: center;
+//     margin-bottom: 30px;
+//   }
+
+//   .clients__list {
+//     display: flex;
+//     flex-wrap: wrap;
+//     align-items: center;
+//     justify-content: center;
+//     gap: 30px;
+//     margin-inline: 15px;
+//   }
+
+//   .clients__list-element {
+//     list-style: none;
+//     width: 226px;
+//     height: 92px;
+//   }
+
+//   .clients-icon__wrapper {
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     border: 1px solid #afb1b8;
+//     border-radius: 4px;
+//     padding: 17px 31px 14px 31px;
+//     transition: border-color 250ms var(--cubic-bezier);
+
+//     &:hover {
+//       border-color: var(--color-blue);
+//       cursor: pointer;
+//     }
+//   }
+
+//   .clients__icon {
+//     fill: var(--icon-color);
+//     transition: fill 250ms var(--cubic-bezier);
+//   }
+
+//   .clients-icon__wrapper:hover .clients__icon {
+//     fill: var(--color-blue);
+//   }
+// }
+// @media screen and (min-width: 1200px) {
+//   .clients__heading {
+//     font-style: normal;
+//     font-weight: 700;
+//     font-size: 36px;
+//     letter-spacing: 0.03em;
+//     line-height: 2.62;
+//     text-align: center;
+//     padding-bottom: 50px;
+//   }
+
+//   .clients__list {
+//     display: flex;
+//     justify-content: center;
+//     gap: 30px;
+//   }
+
+//   .clients__list-element {
+//     list-style: none;
+//   }
+
+//   .clients-icon__wrapper {
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     border: 1px solid #afb1b8;
+//     border-radius: 4px;
+//     padding: 17px 31px 14px 31px;
+//     transition: border-color 250ms var(--cubic-bezier);
+
+//     &:hover {
+//       border-color: var(--color-blue);
+//       cursor: pointer;
+//     }
+//   }
+
+//   .clients__icon {
+//     fill: var(--icon-color);
+//     transition: fill 250ms var(--cubic-bezier);
+//   }
+
+//   .clients-icon__wrapper:hover .clients__icon {
+//     fill: var(--color-blue);
+//   }
+// }
