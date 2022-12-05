@@ -8,7 +8,7 @@
   justify-content: space-between;
   width: 100%;
   margin-inline: 15px;
-  max-width: 96vw;
+  max-width: calc(100% - 30px);
 }
 
 .header__logo {
